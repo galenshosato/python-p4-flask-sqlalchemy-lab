@@ -20,7 +20,7 @@ class Enclosure(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     environment = db.Column(db.String)
-    open_to_visitors = db.Column(db.Boolean)
+    open_to_visitors = db.Column(db.String)
     animals = db.relationship('Animal', backref='enclosure')
 
 class Animal(db.Model):
